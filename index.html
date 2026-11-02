@@ -151,7 +151,7 @@
     </section>
     <div class="mic-controls">
       <label class="sensitivity-label" for="sensitivity">
-        <span>検出感度（右に動かすと小さな音に反応）</span>
+        <span>検出感度（左に動かすと小さな音に反応）</span>
         <output id="sensitivity-value" for="sensitivity">60</output>
       </label>
       <input id="sensitivity" type="range" min="1" max="100" value="60" aria-label="音の検出感度">
@@ -183,7 +183,7 @@
     const samples = new Float32Array(512);
 
     function detectionThreshold() {
-      const sensitivity = Number(sensitivityInput.value) / 100;
+      const sensitivity = 1-Number(sensitivityInput.value) / 100;
       return 0.003 + (1 - sensitivity) ** 2 * 0.12;
     }
 
