@@ -145,7 +145,7 @@
   <main>
     <p class="eyebrow">SOUND TIMER</p>
     <h1>外部の音が鳴るまでの時間</h1>
-    <p class="description">マイクで外部の音を検知します。マイクを接続してからスタートしてください。</p>
+    <p class="description">マイクを接続してからスタートしてください。</p>
     <section class="result" aria-live="polite">
       <p class="result-label">スタートから音を検知するまで</p>
       <p id="time">--.--<span style="font-size: 1rem"> 秒</span></p>
@@ -159,12 +159,12 @@
       <div class="meter" role="progressbar" aria-label="マイク入力レベル" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
         <div id="meter-level"></div>
       </div>
-      <p class="mic-note">周囲の音が大きいときは感度を下げてください。接続後の音声はブラウザー内で検知するだけで、録音・送信されません。</p>
+      <p class="mic-note">周囲の音が大きいときは感度を下げてください。接続後の音声は録音・送信されません。</p>
     </div>
     <p id="status" role="status">最初にマイクを接続してください。</p>
     <button id="connect" type="button">マイクを接続</button>
     <button id="start" class="start-button" type="button" disabled>スタート</button>
-    <p class="note">マイクの使用を許可してください。GitHub PagesではHTTPS接続が必要です。</p>
+    <p class="note">マイクの使用を許可してください。</p>
   </main>
   <script>
     const connectButton = document.querySelector("#connect");
