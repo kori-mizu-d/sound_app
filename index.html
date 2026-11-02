@@ -134,7 +134,7 @@
 
     .start-button { margin-top: 10px; }
 
-    .note { margin: 18px 0 0; color: #98a2b3; font-size: 0.82rem; }
+    .times { font-family: "Times New Roman", "Times", "MS Gothic", "ＭＳ ゴシック", sans-serif; }
 
     @media (max-width: 480px) {
       main { padding: 30px 22px; }
@@ -143,8 +143,8 @@
 </head>
 <body>
   <main>
-    <h1>SOUND TIMER</h1>
-    <p class="description">外部の音が鳴るまでの時間を計測します。マイクを接続してからスタートしてください。</p>
+    <h1><span class="times">SOUND TIMER</span></h1>
+    <p class="description">外部の音が鳴るまでの時間を計測します。</p>
     <section class="result" aria-live="polite">
       <p class="result-label">スタートから音を検知するまで</p>
       <p id="time">--.--<span style="font-size: 1rem"> 秒</span></p>
