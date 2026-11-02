@@ -2,7 +2,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
 
-PAGE_PATH = Path(__file__).resolve().parent / "public" / "index.html"
+PAGE_PATH = Path(__file__).resolve().parent / "index.html"
 
 
 class Handler(BaseHTTPRequestHandler):
